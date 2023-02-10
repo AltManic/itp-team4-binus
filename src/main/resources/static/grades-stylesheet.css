@@ -23,6 +23,22 @@
      border-radius: 5px;
      border: solid white 2px;
   }
+.add
+{
+    display: inline-block;
+    width: 100px;
+    height: 100%;
+    margin-bottom: 0.5em;
+    padding-top: .6em;
+    padding-bottom: .6em;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border-radius: 5px;
+    border: solid white 2px;
+}
 .delete
 {
     display: inline-block;
@@ -45,6 +61,10 @@
     cursor: pointer;
   }
 
+  .add:hover {
+    background-color: orange;
+    cursor: pointer;
+}
   .update:hover {
     background-color: orange;
     cursor: pointer;

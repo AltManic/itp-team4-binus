@@ -13,7 +13,7 @@ import javax.validation.Payload;
 @Constraint(validatedBy = ScoreValidator.class)
 public @interface Score {
 
-    String message() default "Invalid Data";
+    String message() default "Input salah";
 	Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
 

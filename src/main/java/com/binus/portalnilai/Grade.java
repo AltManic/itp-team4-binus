@@ -7,11 +7,11 @@ import javax.validation.constraints.NotBlank;
 public class Grade {
 
     @NotBlank(message = "Nama tidak boleh kosong")
-    private String name;
+    private String nama;
     @NotBlank(message = "Mata kuliah tidak boleh kosong")
-    private String subject;
+    private String mataKuliah;
     @Score(message = "Nilai harus berupa huruf [A+..F]")
-    private String score;
+    private String nilai;
     private String id;
 
 
@@ -19,28 +19,28 @@ public class Grade {
         this.id = UUID.randomUUID().toString();
     }
 
-    public String getName() {
-        return name;
+    public String getNama() {
+        return nama;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNama(String nama) {
+        this.nama = nama;
     }
 
-    public String getSubject() {
-        return subject;
+    public String getMataKuliah() {
+        return mataKuliah;
     }
 
-    public void setSubject(String subject) {
-        this.subject = subject;
+    public void setMataKuliah(String mataKuliah) {
+        this.mataKuliah = mataKuliah;
     }
 
-    public String getScore() {
-        return score;
+    public String getNilai() {
+        return nilai;
     }
 
-    public void setScore(String score) {
-        this.score = score;
+    public void setNilai(String nilai) {
+        this.nilai = nilai;
     }
 
 

@@ -8,11 +8,11 @@
 		<version>2.6.7</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ltp</groupId>
-	<artifactId>grade-submission</artifactId>
+	<groupId>com.binus</groupId>
+	<artifactId>portal-nilai</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>grade-submission</name>
-	<description>Demo project for Spring Boot</description>
+	<name>portal-nilai</name>
+	<description>Aplikasi Portal Nilai Binus</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

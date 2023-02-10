@@ -1,7 +1,7 @@
 <!DOCTYPE>
 <html>
   <head> 
-    <title>Grades</title>
+    <title>Daftar Nilai</title>
     <link th:href="@{/grades-stylesheet.css}" rel="stylesheet">
   </head>
   <body>
@@ -21,9 +21,9 @@
           <th>Nilai</th>
         </tr>
         <tr th:each="grade: ${grades}">
-          <td th:text="${grade.name}"></td>
-          <td th:text="${grade.subject}"></td>
-          <td th:text="${grade.score}"></td>
+          <td th:text="${grade.nama}"></td>
+          <td th:text="${grade.mataKuliah}"></td>
+          <td th:text="${grade.nilai}"></td>
           <td> <a role="button" class="update" th:href="@{/(id = ${grade.id})}">Update</a> </td>
           <td> <a role="button" class="delete" th:href="@{/delete(id = ${grade.id})}">Delete</a> </td>
         </tr>

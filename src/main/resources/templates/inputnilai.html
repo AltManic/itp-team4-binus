@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>Form</title>
+    <title>Input Nilai</title>
     <link th:href="@{/form-stylesheet.css}" rel="stylesheet">
   </head>    
   <body>
@@ -11,14 +11,14 @@
     </div>   
     <div class="container" style="text-align: center;">
       <img src="/logo-binus.png" alt="Logo Binus" style="inline-size: 150px">
-      <h2> Portal Nilai </h2>
+      <h2> Input Nilai </h2>
       <form method="post" th:object="${grade}" th:action="@{/handleSubmit}"> 
-        <p style="color:red" th:errors="*{name}"> </p>
-        <input type="text" placeholder="Nama Mahasiswa" th:field="*{name}">
-        <p style="color:red" th:errors="*{score}"> </p>
-        <input type="text" placeholder="Nilai" th:field="*{score}">
-        <p style="color:red" th:errors="*{subject}"> </p>
-        <input type="text" placeholder="Mata Kuliah" th:field="*{subject}">
+        <p style="color:red" th:errors="*{nama}"> </p>
+        <input type="text" placeholder="Nama Mahasiswa" th:field="*{nama}">
+        <p style="color:red" th:errors="*{nilai}"> </p>
+        <input type="text" placeholder="Nilai" th:field="*{nilai}">
+        <p style="color:red" th:errors="*{mataKuliah}"> </p>
+        <input type="text" placeholder="Mata Kuliah" th:field="*{mataKuliah}">
         <input type="hidden" th:field="*{id}">
         <br><br>
         <input type="submit" value="Submit">

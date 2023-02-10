@@ -1,4 +1,4 @@
-package com.ltp.gradesubmission;
+package com.binus.portalnilai;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,12 +21,12 @@ public class GradeController {
     public String getForm(Model model, @RequestParam(required = false) String id) {
         int index = getGradeIndex(id);
         model.addAttribute("grade", index == Constants.NOT_FOUND ? new Grade() : studentGrades.get(index));
-        return "form";
+        return "inputnilai";
     }
 
     @PostMapping("/handleSubmit")
     public String submitForm(@Valid Grade grade, BindingResult result) {
-        if (result.hasErrors()) return "form";
+        if (result.hasErrors()) return "inputnilai";
 
         int index = getGradeIndex(grade.getId());
         if (index == Constants.NOT_FOUND) {
@@ -49,7 +49,7 @@ public class GradeController {
     @GetMapping("/grades")
     public String getGrades(Model model) {
         model.addAttribute("grades", studentGrades);
-        return "grades";
+        return "daftarnilai";
     }
 
     public int getGradeIndex(String id) {

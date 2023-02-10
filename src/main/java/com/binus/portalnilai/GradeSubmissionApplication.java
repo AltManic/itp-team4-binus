@@ -1,4 +1,4 @@
-package com.ltp.gradesubmission;
+package com.binus.portalnilai;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

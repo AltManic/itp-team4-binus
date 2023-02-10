@@ -1,4 +1,4 @@
-package com.ltp.gradesubmission;
+package com.binus.portalnilai;
 
 import java.util.UUID;
 
